@@ -58,6 +58,7 @@ h6 {
   --eerie-black: #161616ff;
   --battleship-grey: #8c8c8cff;
   --white: #ffffffff;
+  --jasmine: #fbd589ff;
 }
 
 body {
@@ -98,10 +99,15 @@ section > .sections {
   margin-bottom: 1rem;
   font-weight: 900;
   font-size: 20px;
+  color: var(--eerie-black);
 }
 
 .sections > p {
   font-size: 1rem;
+  color: var(--granite-gray);
+}
+
+form {
   color: var(--granite-gray);
 }
 
@@ -111,8 +117,18 @@ section > .sections {
   width: 65pt;
   font-weight: 700;
   margin-top: 0.5rem;
+  transition: font-size 0.2s ease;
 }
 
+.button:hover {
+  cursor: pointer;
+  color: var(--jasmine);
+  font-size: 1.25rem;
+}
+
+.button:active {
+  font-size: 1rem;
+}
 #name-field {
   width: 237px;
   border: 0;
